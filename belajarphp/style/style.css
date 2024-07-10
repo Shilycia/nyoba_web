@@ -1,0 +1,257 @@
+/* all */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "outfit";
+}
+
+footer{
+    width: 100%;
+    background-color: #1F2937;
+    height: auto;
+    box-shadow: 0px -10px 0px black;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 0;
+}
+
+a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+video{
+    width: 100%;
+}
+
+/* body */
+body{
+    background: url('../public/bg_body.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar design */
+nav{
+    display: flex;
+    place-items: center;
+    width: 100%;
+    height: 51px;
+    background-color: #1F2937;
+    position: fixed;
+    z-index: 1;
+    margin-top: -51px;
+}
+
+.icon_web{
+    margin-left: 10%;
+    filter: invert(100%);
+}
+
+.navigation_page{
+    margin-left: 2%;
+    width: max-content;
+    display: flex;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+}
+
+.icon_nav{
+    margin-right: 10%;
+    margin-left: auto;
+    display: flex;
+    place-items: center;
+}   
+
+.notif{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin-right: 10px;
+    opacity: 70%;
+}
+
+
+.profile{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.a2{
+    font-size: 10px;
+    opacity: 70%;
+    display: flex;
+    place-items: center;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+    background-color: #1F2937;
+    margin: 0px 10px 0px 10px;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent overlay by default */
+    transition: background-color 0.3s ease;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+}
+
+.a1{
+    background-color: #05121f;
+    display: flex;
+    place-items: center;
+    border-radius: 5px;
+}
+
+.title{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 10px black;
+    display: flex;
+    place-items: center;
+    margin-top: 51px;
+}
+
+.title label{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-right: auto;
+
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.body_content{
+    margin: 20px;
+    color: black;
+    transition: color 0.5s, opacity 1s;
+    font-weight: bold;
+}
+
+.body_content.white {
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.copyright{
+    width: 100%;
+    background-color: black;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.content{
+    width: 30%;
+    margin: 20px;
+}
+
+.container-footer{
+    display: flex;
+    margin: 5px;
+}
+
+.content p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.img_body{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* hover */
+.a2:hover{
+    background-color: #3f4c5f;
+    opacity: 100%;
+}
+
+.icon_menu{
+    margin-right: 10%;
+    display: flex;
+    place-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon_menu img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.notif:hover{
+    opacity: 100%;
+}
+
+.video-container:hover video {
+    opacity: 40%;
+}
+
+.video-container:hover .video-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the darkness level as needed */
+}
+
+.video-container:hover .video-text {
+    opacity: 1;
+}
+
+.icon_menu:hover{
+    background-color: #9d9e9f;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+    .a1{
+        background-color: #1F2937;
+        font-weight: bold;
+    }
+    .a2{
+        display: none;
+    }
+    .notif{
+        display: none;
+    }    
+    .profile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .icon_menu{
+        display: none;
+    }
+}
